@@ -212,7 +212,6 @@
 <body data-theme="dark">
   <div class="site-header" role="banner" aria-label="Site header">
     <h1>R3cked Games V2</h1>
-<script type="text/javascript" src="https://counter.websiteout.com/js/2/0/0/0"></script>
     <!-- Search bar: filters by game name only -->
     <div class="search-bar" role="search" aria-label="Search games">
       <input id="searchBar" type="search" placeholder="Search games..." aria-label="Search games">
@@ -366,28 +365,8 @@
     setInterval(updateClock12, 1000);
     updateClock12();
 
-    /* Site counter (per-browser) */
-    const siteCounterEl = document.getElementById('site-counter');
-    const SITE_KEY = 'r3cked_visitors_unique_v1';
-    const SITE_TOTAL_KEY = 'r3cked_visitors_total_v1';
-    function updateSiteCounter() {
-      try {
-        const hasVisited = localStorage.getItem(SITE_KEY);
-        let total = parseInt(localStorage.getItem(SITE_TOTAL_KEY) || '0', 10) || 0;
-        if (!hasVisited) {
-          localStorage.setItem(SITE_KEY, Date.now().toString());
-          total = total + 1;
-          localStorage.setItem(SITE_TOTAL_KEY, String(total));
-        }
-        siteCounterEl.textContent = `Visitors: ${total}`;
-      } catch (e) {
-        const t = sessionStorage.getItem('r3cked_session_visits') || '0';
-        const n = parseInt(t,10) + 1;
-        sessionStorage.setItem('r3cked_session_visits', String(n));
-        siteCounterEl.textContent = `Visits (session): ${n}`;
-      }
-    }
-    updateSiteCounter();
+    <script type="text/javascript" src="https://counter.websiteout.com/js/2/0/0/0"></script>
+
 
     /* Battery info */
     const batteryEl = document.getElementById('battery-info');
