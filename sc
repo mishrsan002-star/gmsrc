@@ -210,8 +210,12 @@
   </style>
 </head>
 <body data-theme="dark">
+<script>
+        alert("When you click on a game, it might take a couple of seconds to open. If it does not, it could mean that a extension like goguardian is limiting the amount of tabs you can have open, so just close one you don't need and try again. Enjoy!");
+    </script>
   <div class="site-header" role="banner" aria-label="Site header">
     <h1>R3cked Games V2</h1>
+    <h3>
 <script type="text/javascript" src="https://counter.websiteout.com/js/2/0/0/0"></script>
     <!-- Search bar: filters by game name only -->
     <div class="search-bar" role="search" aria-label="Search games">
