@@ -226,7 +226,6 @@
 
   <div class="toolbar" id="toolbar" aria-hidden="false">
     <div class="pill" id="mini-clock">--:--:--</div>
-    <div class="pill" id="site-counter">Visits: --</div>
     <div class="pill" id="battery-info">Battery: --</div>
 
     <div style="display:flex;align-items:center;gap:6px;">
