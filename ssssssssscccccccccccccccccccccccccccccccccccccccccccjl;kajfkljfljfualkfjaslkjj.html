@@ -419,6 +419,12 @@
     </div>
   </div>
 
+  <div class="main-content" role="main">
+    <div id="sections-container"></div>
+
+    
+  </div>
+
   <div class="toolbar" id="toolbar" aria-hidden="false">
     <div class="pill" id="mini-clock">--:--:--</div>
     <div class="pill" id="battery-info">Battery: --</div>
@@ -2663,7 +2669,7 @@
           const normalized = (source.includes('.') && source.lastIndexOf('.')>0) ? source : source + '.html';
           const encoded = encodeURIComponent(normalized);
           try {
-            const res = await fetch(`https://cdn.jsdelivr.net/gh/mishrsan002-star/sfxxx/UGS-Files/${encoded}?t=${Date.now()}`);
+            const res = await fetch(`https://cdn.jsdelivr.net/gh/mishrsan002-star/shx/UGS-Files/${encoded}?t=${Date.now()}`);
             if (!res.ok) throw new Error('Could not load game');
             const text = await res.text();
             const newWin = window.open("about:blank","_blank");
@@ -3061,7 +3067,7 @@
     });
   </script>
 <script>
-        alert("Hello! This site is owned and ran by U.B.A (United Biggies of America), and is ran by the Free User division (F.U.D.). All current employees will be divised into your respective divisions. Thank you!");
+        alert("Hello! This site is owned and ran by U.B.A (United Biggies of America), and is ran by the Free User division (F.U.D. All current employees will be divised into your respective divisions. Thank you!");
     </script>
 </body>
 </html>
