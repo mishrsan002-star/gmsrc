@@ -419,24 +419,6 @@
     </div>
   </div>
 
-  <div class="main-content" role="main">
-    <div id="sections-container"></div>
-
-    <!-- Save/Load System -->
-    <div class="save-load-section">
-      <div class="footer-title">💾 Data Export & Import</div>
-      <div class="footer-text">
-        Export all your browser data including cookies, localStorage, sessionStorage, IndexedDB, and caches to a file. 
-        Import to restore your data on any device or browser.
-      </div>
-      <div class="save-load-buttons">
-        <button class="export-btn" onclick="saveData()">Export Data</button>
-        <button class="import-btn" onclick="document.getElementById('importData').click()">Import Data</button>
-      </div>
-      <input type="file" id="importData" onchange="loadData(event)">
-    </div>
-  </div>
-
   <div class="toolbar" id="toolbar" aria-hidden="false">
     <div class="pill" id="mini-clock">--:--:--</div>
     <div class="pill" id="battery-info">Battery: --</div>
